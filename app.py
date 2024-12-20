@@ -4,6 +4,8 @@ import spacy
 from spellchecker import SpellChecker
 import re
 
+
+
 app = Flask(__name__)
 
 nlp_el = spacy.load('el_core_news_sm')
