@@ -103,5 +103,5 @@ def search():
     except requests.exceptions.RequestException as req_err:
         return jsonify({'error': f'Request error occurred: {req_err}'}), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=8080)
